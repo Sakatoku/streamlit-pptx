@@ -23,5 +23,9 @@ picture = shapes.add_picture(image_file, 10 * EMU_PER_CM, 6 * EMU_PER_CM, 15 * E
 picture.crop_bottom = 0.25
 picture.rotation = -60
 
+# まずはテンポラリフォルダに何かの画像が置かれている前提でプロトタイピングする
+image_file = 'tmp/fig1.png'
+picture = shapes.add_picture(image_file, 10 * EMU_PER_CM, 6 * EMU_PER_CM, 15 * EMU_PER_CM, 8 * EMU_PER_CM)
+
 # プレゼンテーションファイルを保存する
 prs.save(TEST_FILENAME)
